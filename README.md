@@ -596,10 +596,3 @@ O `.gitignore` tambem ignora arquivos grandes de dump de memoria:
 *.hprof
 ```
 
-Esses arquivos nao devem ser enviados para o GitHub nem incluidos no zip da entrega.
-
-## Observacoes de Integracao
-
-O frontend esta preparado para usar `PUT` no fluxo de edicao. Para que a edicao funcione em todos os CRUDs, o backend tambem precisa disponibilizar os respectivos endpoints `PUT /{recurso}/{id}`.
-
-No backend atual, alguns controllers possuem apenas `GET`, `POST` e `DELETE`. Nesses casos, a listagem, criacao e exclusao ficam alinhadas, mas a edicao depende da implementacao do `PUT` no backend.
